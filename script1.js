@@ -30,11 +30,18 @@
     }
     function trekAf(getal1, getal2){
         let antwoord = getal1 - getal2;
-        console.log("sftrekken " + antwoord);
+        console.log("aftrekken " + antwoord);
         aftrekken.innerHTML = antwoord;
     }
     function deel(getal1, getal2){
-        let antwoord = getal1 / getal2;
-        console.log("delen " + antwoord);
-        delen.innerHTML = antwoord;
+        if (getal2 == 0) {
+            let antwoord = ("door 0 kan niet, geef een ander getal");
+            console.log("delen door 0 kan niet, geef een ander getal");
+            delen.innerHTML = antwoord;
+        } else {
+            let antwoord = getal1 / getal2;
+            console.log("delen " + antwoord);
+            delen.innerHTML = antwoord;
+        }
     }
+    
