@@ -33,6 +33,7 @@
         if (getal2 == 0) {
             let antwoord = ("door 0 kan niet, geef een ander getal");
             console.log("delen door 0 kan niet, geef een ander getal");
+            window.alert("delen door 0 kan niet, geef een ander getal");
             delen.innerHTML = antwoord;
         } else {
             let antwoord = getal1 / getal2;
